@@ -1,3 +1,10 @@
+/* Random.jack
+ * By Mark Armbrust
+ * http://nand2tetris-questions-and-answers-forum.32033.n3.nabble.com/Random-number-generator-for-hack-cpu-td4025503.html
+ * Also see:
+ * http://nand2tetris-questions-and-answers-forum.32033.n3.nabble.com/Pseudo-Random-Number-Generator-td4026059.html#a4027617
+ */
+
 class Random {
     static int seed;
     
