@@ -10,6 +10,7 @@ class Gameplay {
         var Food piece;
         var boolean hasFood, foodBowl;
         let points = 0;
+        do Gameplay.showPoints(points);
         let kkey = 0;
         let curKey = Keyboard.keyPressed();
         do Random.setSeed(kkey); // Seeds the Random.jack generator with the default seed range
@@ -34,7 +35,7 @@ class Gameplay {
                 do Output.printInt(range);
                 let pieces = Gameplay.seedFood(range, player);
             }
-            if (head.getX() < 2) {
+            if (head.getX() < 5) {
                 do player.dispose();
                 let curKey = 135;
             }
@@ -130,6 +131,8 @@ class Gameplay {
         do Output.moveCursor(22, 1);
         do Output.printString(" Points: ");
         do Output.printInt(points);
+        do Output.moveCursor(22, 45);
+        do Output.printString("@roxacarv");
         return;
     }
 }
