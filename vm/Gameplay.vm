@@ -1,6 +1,9 @@
 function Gameplay.Run 9
 push constant 0
 pop static 1
+push static 1
+call Gameplay.showPoints 1
+pop temp 0
 push constant 0
 pop argument 2
 call Keyboard.keyPressed 0
@@ -82,7 +85,7 @@ pop local 3
 label IF_FALSE1
 push local 4
 call Block.getX 1
-push constant 2
+push constant 5
 lt
 if-goto IF_TRUE2
 goto IF_FALSE2
@@ -395,6 +398,32 @@ call Output.printString 1
 pop temp 0
 push argument 0
 call Output.printInt 1
+pop temp 0
+push constant 22
+push constant 45
+call Output.moveCursor 2
+pop temp 0
+push constant 9
+call String.new 1
+push constant 64
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 111
+call String.appendChar 2
+push constant 120
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 99
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 118
+call String.appendChar 2
+call Output.printString 1
 pop temp 0
 push constant 0
 return
