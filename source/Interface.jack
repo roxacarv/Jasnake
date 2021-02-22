@@ -1,7 +1,7 @@
 class Interface {
     function void ShowStart() {
         do Output.moveCursor(5, 20);
-        do Output.printString("Bem-vindo ao JASNAKE!");
+        do Output.printString("Bem-vindo ao SNACK!");
         do Output.moveCursor(7, 2);
         do Output.printString("REGRAS:");
         do Output.moveCursor(8, 2);
